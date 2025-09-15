@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Criativo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* CONTEÚDO PRINCIPAL - TRÊS COLUNAS */
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .column {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .column:hover {
+            transform: translateY(-5px);
+        }
+
+        .column h2 {
+            color: #2575fc;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .column img {
+            width: 100%;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .column iframe {
+            width: 100%;
+            height: 200px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border: none;
+        }
+
+        /* FOOTER */
+        footer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            background: #2c3e50;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 15px;
+            color: #3498db;
+        }
+
+        address {
+            font-style: normal;
+            line-height: 1.8;
+        }
+
+        .contact-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .contact-link:hover {
+            background: #2980b9;
+        }
+
+        /* RESPONSIVIDADE */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            
+            footer {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <h1>Explorando Novos Horizontes</h1>
+            <p>Uma jornada através de paisagens deslumbrantes, culturas fascinantes e experiências inesquecíveis</p>
+        </header>
+
+        <!-- TRÊS COLUNAS -->
+        <div class="main-content">
+            <div class="column">
+                <h2>Destinos Exóticos</h2>
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Paisagem natural">
+                <p>Descubra os destinos mais incríveis do planeta, desde praias paradisíacas até montanhas imponentes. Aventure-se em locais que parecem saídos de sonhos.</p>
+                <p>Cada destino oferece uma experiência única, com gastronomia local, tradições culturais e paisagens de tirar o fôlego.</p>
+            </div>
+
+            <div class="column">
+                <h2>Cultura Local</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondres%2C%20Reino%20Unido!5e0!3m2!1spt-BR!2sbr!4v1622641724216!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+                <p>Mergulhe nas tradições e costumes dos locais que visita. Aprenda sobre histórias fascinantes, participe de festivais tradicionais e conecte-se com pessoas incríveis.</p>
+                <p>A verdadeira essência de uma viagem está nas interações humanas e nas experiências culturais autênticas.</p>
+            </div>
+
+            <div class="column">
+                <h2>Aventuras</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=1VhezN-EFfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Para os amantes de adrenalina, explore atividades emocionantes como mergulho, trilhas, escaladas e esportes radicais em alguns dos cenários mais deslumbrantes do mundo.</p>
+                <p>Supere seus limites e crie memórias que durarão para sempre enquanto desafia yourself em ambientes naturais incríveis.</p>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-section">
+                <h3>Entre em Contato</h3>
+                <address>
+                    Explorando Horizontes Travel<br>
+                    Rua das Aventuras, 123<br>
+                    Mundo dos Sonhos, MD 45678<br>
+                    Tel: (11) 98765-4321
+                </address>
+                <a href="mailto:contato@explorandohorizontes.com" class="contact-link">Enviar E-mail</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <p>Siga-nos para descobrir novas inspirações de viagem todos os dias:</p>
+                <p>📷 Instagram: @explorandohorizontes</p>
+                <p>📘 Facebook: /explorandohorizontes</p>
+                <p>🐦 Twitter: @explorar_viagens</p>
+                <a href="https://wa.me/5511987654321" class="contact-link">Enviar Mensagem no WhatsApp</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
